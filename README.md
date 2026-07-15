@@ -18,7 +18,9 @@
 
 ## 🚀 Live App
 
-🔗 **[https://github.com/Neer-tech878/AI-ML-Credit-Card-Approval-Prediction](https://github.com/Neer-tech878/AI-ML-Credit-Card-Approval-Prediction)**
+🔗 **[https://ai-ml-credit-card-approval-prediction-4aut.onrender.com](https://ai-ml-credit-card-approval-prediction-4aut.onrender.com)**
+
+> ⚠️ Free tier — first load may take ~30–50 seconds to wake up
 
 ---
 
