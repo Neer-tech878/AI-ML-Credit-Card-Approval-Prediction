@@ -1,0 +1,29 @@
+# Ignore temporary/long-named folders
+check_pdfs_mine_to_be_pasted_in_above_paths_atlast_deleting those/
+
+# Ignore trained model files (auto-generated on first run)
+5.Project Development Phase/models/
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Ignore metrics script (internal use only)
+5.Project Development Phase/generate_metrics.py
+
+# Ignore environment
+.env
+.venv
+env/
+venv/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

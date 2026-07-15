@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Credit Card Approval Prediction System using AI & ML — Developed by Kadali Neeraj, B.Tech CSE (AI & ML), Sagi Ramakrishnam Raju Engineering College">
+  <meta name="author" content="Kadali Neeraj | Roll: 23B91A6167 | SRKREC | B.Tech CSE (AI & ML) 2023-2027">
+  <title>CreditAI — Smart Credit Card Predictor | Kadali Neeraj</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Background particles -->
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+  <div class="bg-orb orb3"></div>
+
+  <div class="page">
+
+    <!-- TOP NAV BAR -->
+    <header class="topbar">
+      <div class="topbar-logo">
+        <span class="logo-icon">💳</span>
+        <span class="logo-text">CreditAI</span>
+      </div>
+      <div class="topbar-badge">AI-Powered Prediction</div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="main-container">
+
+      <!-- LEFT PANEL -->
+      <aside class="left-panel">
+        <h1 class="hero-title">Smart Credit<br><span class="gradient-text">Approval</span><br>Predictor</h1>
+        <p class="hero-sub">Powered by Random Forest ML algorithm with high accuracy prediction for credit card eligibility.</p>
+
+        <div class="stat-cards">
+          <div class="stat-card">
+            <div class="stat-number">85%+</div>
+            <div class="stat-label">Accuracy</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">12</div>
+            <div class="stat-label">Features</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">200</div>
+            <div class="stat-label">Trees</div>
+          </div>
+        </div>
+
+        <div class="dev-card">
+          <div class="dev-avatar">KN</div>
+          <div class="dev-info">
+            <div class="dev-name">Kadali Neeraj</div>
+            <div class="dev-detail">23B91A6167 · B.Tech CSE (AI &amp; ML)</div>
+            <div class="dev-detail">Sagi Ramakrishnam Raju Engineering College</div>
+            <div class="dev-detail">2023 – 2027 · Smartbridge AICTE Internship</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT PANEL — FORM -->
+      <section class="right-panel">
+
+        <div class="form-header">
+          <h2>Check Your Eligibility</h2>
+          <p>Fill in the details below and get instant results</p>
+        </div>
+
+        <form id="predictionForm">
+
+          <!-- Section: Personal -->
+          <div class="section-label">👤 Personal Details</div>
+          <div class="form-grid two-col">
+
+            <div class="input-group">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="age">Age (years)</label>
+              <input type="number" id="age" placeholder="e.g. 30" min="18" max="100" step="0.1" required />
+            </div>
+
+            <div class="input-group">
+              <label for="married">Marital Status</label>
+              <select id="married">
+                <option value="1">Married</option>
+                <option value="0">Single</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="citizen">Citizenship Status</label>
+              <select id="citizen">
+                <option value="ByBirth">By Birth</option>
+                <option value="ByOtherMeans">By Other Means</option>
+                <option value="Temporary">Temporary</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Section: Financial -->
+          <div class="section-label">💰 Financial Details</div>
+          <div class="form-grid two-col">
+
+            <div class="input-group">
+              <label for="income">Annual Income (₹)</label>
+              <input type="number" id="income" placeholder="e.g. 500000" required />
+            </div>
+
+            <div class="input-group">
+              <label for="debt">Total Debt (₹)</label>
+              <input type="number" id="debt" placeholder="e.g. 1.5" required />
+            </div>
+
+            <div class="input-group">
+              <label for="credit_score">Credit Score</label>
+              <input type="number" id="credit_score" placeholder="e.g. 8" required />
+            </div>
+
+            <div class="input-group">
+              <label for="prior_default">Prior Default</label>
+              <select id="prior_default">
+                <option value="1">No Default History</option>
+                <option value="0">Has Prior Default</option>
+              </select>
+            </div>
+
+          </div>
+
+          <!-- Section: Employment -->
+          <div class="section-label">🏢 Employment Details</div>
+          <div class="form-grid two-col">
+
+            <div class="input-group">
+              <label for="employed">Employment Status</label>
+              <select id="employed">
+                <option value="1">Currently Employed</option>
+                <option value="0">Not Employed</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="years_employed">Years Employed</label>
+              <input type="number" id="years_employed" placeholder="e.g. 5" required />
+            </div>
+
+            <div class="input-group">
+              <label for="bank_customer">Bank Customer</label>
+              <select id="bank_customer">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <label for="industry">Industry Sector</label>
+              <select id="industry">
+                <option value="CommunicationServices">Communication Services</option>
+                <option value="ConsumerDiscretionary">Consumer Discretionary</option>
+                <option value="ConsumerStaples">Consumer Staples</option>
+                <option value="Education">Education</option>
+                <option value="Energy">Energy</option>
+                <option value="Financials">Financials</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Industrials">Industrials</option>
+                <option value="InformationTechnology">Information Technology</option>
+                <option value="Materials">Materials</option>
+                <option value="Real Estate">Real Estate</option>
+                <option value="Research">Research</option>
+                <option value="Transport">Transport</option>
+                <option value="Utilities">Utilities</option>
+              </select>
+            </div>
+
+          </div>
+
+          <button type="submit" id="submitBtn">
+            <span id="btnText">⚡ Predict Eligibility</span>
+            <span id="btnLoader" style="display:none">🔄 Analysing...</span>
+          </button>
+
+        </form>
+
+        <!-- RESULT BOX -->
+        <div id="resultBox">
+          <div id="resultIcon"></div>
+          <div id="resultText"></div>
+          <div id="confidenceBar">
+            <div id="confidenceFill"></div>
+          </div>
+          <div id="confidenceText"></div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <p>© 2025 Kadali Neeraj | 23B91A6167 | B.Tech CSE (AI &amp; ML) | Sagi Ramakrishnam Raju Engineering College | Smartbridge AICTE Internship</p>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
